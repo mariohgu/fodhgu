@@ -48,7 +48,7 @@ function App() {
       const casted = resized.cast('int32')
       const expanded = casted.expandDims(0)
       const obj = await net.executeAsync(expanded)
-      console.log(await obj[6].array())
+      //console.log(await obj[6].array())
       
       const boxes = await obj[7].array()
       const classes = await obj[4].array()
