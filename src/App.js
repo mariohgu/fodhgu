@@ -13,7 +13,7 @@ function App() {
 
   // Main function
   const runCoco = async () => {
-    // 3. TODO - Load network 
+    // 3. TODO - Load network 'https://raw.githubusercontent.com/mariohgu/saurow/main/tfjs/model.json';
     const net = await tf.loadGraphModel(process.env.PUBLIC_URL + '/model_web/model.json')
     
     // Loop and detect hands
